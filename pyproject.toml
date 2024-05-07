@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "boilerplate-py"  # TODO: Replace with your app
+version = "0.1.0"  # TODO: Replace with your app version
+description = "Project description."  # TODO: Replace with your app description
+authors = ["Your Name <you@example.com>"]  # TODO: Replace with your name and email
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+fastapi = "*"
+loguru = "*"
+pydantic = "*"
+pydantic-settings = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+
+# Project dependencies
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
